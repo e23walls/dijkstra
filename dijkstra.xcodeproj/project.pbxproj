@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C23A5F41929329300373CA5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C23A5F31929329300373CA5 /* main.cpp */; };
 		9C23A5F61929329300373CA5 /* dijkstra.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9C23A5F51929329300373CA5 /* dijkstra.1 */; };
+		9C23A5FE192932B900373CA5 /* graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C23A5FC192932B900373CA5 /* graph.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,9 @@
 		9C23A5F01929329300373CA5 /* dijkstra */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dijkstra; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C23A5F31929329300373CA5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9C23A5F51929329300373CA5 /* dijkstra.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = dijkstra.1; sourceTree = "<group>"; };
+		9C23A5FC192932B900373CA5 /* graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graph.cpp; sourceTree = "<group>"; };
+		9C23A5FD192932B900373CA5 /* graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
+		9CDFEBE81987241300459B51 /* priorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = priorityQueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				9C23A5F31929329300373CA5 /* main.cpp */,
+				9CDFEBE81987241300459B51 /* priorityQueue.h */,
+				9C23A5FC192932B900373CA5 /* graph.cpp */,
+				9C23A5FD192932B900373CA5 /* graph.h */,
 				9C23A5F51929329300373CA5 /* dijkstra.1 */,
 			);
 			path = dijkstra;
@@ -117,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C23A5FE192932B900373CA5 /* graph.cpp in Sources */,
 				9C23A5F41929329300373CA5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +233,7 @@
 				9C23A5FB1929329300373CA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
