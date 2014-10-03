@@ -218,7 +218,6 @@ void backTraceGraph(Vertex * v)
     {
         std::cout << curr->getData() << std::endl;
         curr = curr->pi;
-        
     }
 }
 
@@ -232,7 +231,6 @@ void DFS(Vertex * const v, Vertex * last, std::stack<Vertex *> & s, std::vector<
         curr->marked = true;
         std::cout << curr->getData() << std::endl;
         solution.push_back(curr);
-        curr->marked = true;
         currNeigh = curr->getNeighbours();
         for (int i = 0; i < currNeigh.size(); i++)
         {
@@ -272,6 +270,7 @@ Maze::Maze(Vertex * first) : Graph(first)
 {}
 Maze::~Maze()
 {
+    // Maze inherits from Graph, and Graph destructor takes care of everything.
 }
 
 void Maze::solve(Vertex * last)
