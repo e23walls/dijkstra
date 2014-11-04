@@ -97,6 +97,14 @@ int main(int argc, const char * argv[])
     cout << "Shortest path from '"<< start->getData() << "' to '" << end->getData() << "' has length of " << end->d_value << ".\n";
     backTraceGraph(end);
     
+    delete alice;
+    delete bob;
+    delete claire;
+    delete dennis;
+    delete ester;
+    delete frank;
+    delete georgina;
+    
     return 0;
 }
 
